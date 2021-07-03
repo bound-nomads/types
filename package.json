@@ -1,20 +1,33 @@
 {
   "name": "@wiseintrovert/boundnomads-types",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Fardeen Panjwani",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
+    "semantic-release": "^17.4.4",
     "typescript": "^4.3.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bound-nomads/types.git"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
